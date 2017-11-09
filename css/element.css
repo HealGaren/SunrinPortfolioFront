@@ -1,0 +1,15 @@
+
+.card {
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px #ccc;
+    background:#fff;
+}
+
+.round-tag {
+    border-radius: 10px;
+    border:1px solid #111112;
+}
+
+.round-tag.colored {
+    border-color: #ea7d1e;
+}

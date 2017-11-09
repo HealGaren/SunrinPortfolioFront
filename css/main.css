@@ -1,0 +1,28 @@
+main {
+    flex: 1;
+    padding:28px;
+    
+    display:flex;
+    flex-flow: column;
+}
+
+main > #card-search {
+    height:300px;
+}
+
+main > #card-search > .search-box {
+    display:flex;
+    flex-flow:column;
+    align-items: center;
+}
+
+main > #card-search > .search-box > .title-line {
+    height:6px;
+    background-color: #000;
+    width:68px;
+}
+main > #card-search > .search-box > .title {
+    margin-top:9px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
