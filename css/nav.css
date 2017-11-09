@@ -49,7 +49,6 @@ nav > .nav-item > .nav-item-name {
     font-size:18px;
     font-weight: bold;
     flex:1;
-    letter-spacing: 1px;
 }
 
 nav > .nav-item.select > .nav-item-name {

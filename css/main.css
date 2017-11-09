@@ -7,13 +7,13 @@ main {
 }
 
 main > #card-search {
-    height:300px;
 }
 
 main > #card-search > .search-box {
     display:flex;
     flex-flow:column;
     align-items: center;
+    margin-top:40px;
 }
 
 main > #card-search > .search-box > .title-line {
@@ -24,5 +24,24 @@ main > #card-search > .search-box > .title-line {
 main > #card-search > .search-box > .title {
     margin-top:9px;
     font-size: 35px;
-    letter-spacing: 2px;
+}
+
+main > #card-search > .search-box > .tags-box {
+    display:flex;
+    flex-flow: column;
+}
+
+main > #card-search > .search-box > .tags-box > .tags {
+    margin-top:14px;
+    display:flex;
+}
+
+main > #card-search > .search-box > .tags-box > .tags > span {
+    width:155px;
+    height:48px;
+    line-height: 48px;
+    font-size:22px;
+    font-weight: 300;
+    text-align: center;
+    margin:0 7px;
 }
