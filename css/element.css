@@ -10,6 +10,18 @@
     border:1px solid #111112;
 }
 
-.round-tag.colored {
-    border-color: #ea7d1e;
+.hacking .round-tag.colored {
+    border-color: #d36b26;
+}
+
+.sw .round-tag.colored {
+    border-color: #ebb124;
+}
+
+.techno .round-tag.colored {
+    border-color: #44ab71;
+}
+
+.multi .round-tag.colored {
+    border-color: #3a68a8;
 }

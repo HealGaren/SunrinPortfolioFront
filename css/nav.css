@@ -20,6 +20,9 @@ nav > #nav-header {
 nav > #nav-header > img {
     margin:30px 0;
 }
+nav > .nav-item:before {
+}
+
 
 nav > .nav-item {
     padding:0 17px;
@@ -34,7 +37,12 @@ nav > .nav-item:last-child {
 }
 
 nav > .nav-item.select {
-    border-left:17px solid #ea7d1e;
+    border-left:17px solid #d36b26;
+    padding-left:0;
+}
+
+nav > .nav-item.select {
+    border-left:17px solid #d36b26;
     padding-left:0;
 }
 
@@ -42,7 +50,15 @@ nav > .nav-item > .nav-ic-wrap {
     width:43px;
     margin:0 20px;
     display:flex;
-    justify-content: center
+    justify-content: center;
+}
+
+nav > .nav-item.has-color:not(.select) > .nav-ic-wrap img:nth-child(1) {
+    display:none;
+}
+
+nav > .nav-item.has-color.select > .nav-ic-wrap img:nth-child(2) {
+    display:none;
 }
 
 nav > .nav-item > .nav-item-name {
