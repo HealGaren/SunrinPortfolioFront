@@ -1,8 +1,6 @@
 main {
     flex: 1;
-    padding:28px;
-    
-    overflow:scroll;
+    padding:28px;    
 }
 
 main > #card-search {
@@ -14,7 +12,6 @@ main > #card-search {
 main > #card-search > #search-box-wrap {
 /*    overflow:scroll;*/
     padding-bottom:60px;
-        overflow-y:scroll;
 
 }
 
@@ -68,12 +65,37 @@ main > #card-search > #search-btn {
 
 
 
-
-main > #result-container {
+main > #result-wrap {
+    margin-top:40px;
     display:flex;
     flex-flow: column;
 }
 
-main > #result-container > span {
-    height:200px;
+main > #result-wrap > #result-message {
+    align-self: flex-end;
+}
+
+main > #result-wrap > #result-container {
+    display:flex;
+    flex-flow: column;
+}
+
+
+
+main > #result-wrap > #result-container > .result-item {
+    height:215px;
+    margin-top:20px;
+    display:flex;
+    overflow:hidden;
+}
+
+
+main > #result-wrap > #result-container > .result-item > .result-item-preview {
+    background-image:url('../image/result-item-test.jpg');
+    background-size:cover;
+    width:310px;
+}
+
+main > #result-wrap > #result-container > .result-item > .result-item-article {
+    width:100px;
 }
