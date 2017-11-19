@@ -1,6 +1,7 @@
 main {
     flex: 1;
-    padding:28px;    
+    padding:40px;
+    overflow-y:scroll;
 }
 
 main > #card-search {
@@ -24,7 +25,7 @@ main > #card-search > #search-box-wrap > .search-box {
 
 main > #card-search > #search-box-wrap > .search-box > .title-line {
     height:6px;
-    background-color: #000;
+    background-color: rgb(38, 38, 38);
     width:68px;
 }
 main > #card-search > #search-box-wrap > .search-box > .title {
@@ -97,5 +98,46 @@ main > #result-wrap > #result-container > .result-item > .result-item-preview {
 }
 
 main > #result-wrap > #result-container > .result-item > .result-item-article {
-    width:100px;
+    flex:1;
+    padding:20px 30px;
+    display:flex;
+    flex-flow: column;
+}
+
+main > #result-wrap > #result-container > .result-item > .result-item-article .title {
+    display:block;
+    font-size: 30px;
+    color:rgb(80, 80, 80);
+    font-weight: bold;
+}
+
+main > #result-wrap > #result-container > .result-item > .result-item-article .content {
+    flex:1;
+    margin-top:5px;
+    line-height: 1.3em;
+    display:inline-block;
+}
+
+main > #result-wrap > #result-container > .result-item > .result-item-article > .tags {
+    display:inline-block;
+}
+
+main > #result-wrap > #result-container > .result-item > .result-item-info {
+    width:550px;
+    display:flex;
+    align-items: center;
+    color:rgb(80, 80, 80);
+    font-size:25px;
+    justify-content: space-evenly;
+}
+
+main > #result-wrap > #result-container > .result-item > .result-item-info > .middle-line {
+    width:2px;
+    height:25px;
+    display:inline-block;
+    background-color:rgb(80, 80, 80);
+}
+
+main > #result-wrap > #result-container > .result-item > .result-item-info > span:last-child {
+    width:250px;
 }
