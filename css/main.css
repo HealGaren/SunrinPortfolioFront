@@ -116,6 +116,7 @@ main > #result-wrap > #result-container > .result-item > .result-item-article .c
     margin-top:5px;
     line-height: 1.3em;
     display:inline-block;
+    overflow:hidden;
 }
 
 main > #result-wrap > #result-container > .result-item > .result-item-article > .tags {

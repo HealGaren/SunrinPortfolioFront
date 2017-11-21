@@ -26,6 +26,7 @@ nav > .nav-item:before {
 
 
 nav > .nav-item {
+    position:relative;
     padding:0 17px;
     display: flex;
     align-items: center;
@@ -37,14 +38,17 @@ nav > .nav-item:last-child {
     border-bottom:2px solid #bebebe;
 }
 
-nav > .nav-item.select {
-    border-left:17px solid #d36b26;
-    padding-left:0;
-}
-
-nav > .nav-item.select {
-    border-left:17px solid #d36b26;
-    padding-left:0;
+nav > .nav-item.select:before {
+    content:'';
+    position:absolute;
+    left:0;
+    top:-2px;
+    bottom:-2px;
+    z-index: 1;
+    
+    width:17px;
+    display:inline-block;
+    background:#ea7d1e;
 }
 
 nav > .nav-item > .nav-ic-wrap {
@@ -63,11 +67,18 @@ nav > .nav-item.has-color.select > .nav-ic-wrap img:nth-child(2) {
 }
 
 nav > .nav-item > .nav-item-name {
-    font-size:18px;
-    font-weight: bold;
+    font-size:19px;
+    font-weight:700;
     flex:1;
 }
 
 nav > .nav-item.select > .nav-item-name {
     color:#ea7d1e;
+}
+
+nav > .nav-item > .right-angle-bracket {
+    width:10px;
+    height:14px;
+    display:inline-block;
+    background-image: url('../image/right_angle_bracket.png');
 }
